@@ -1,0 +1,17 @@
+INPUT
+==============
+Maven file
+ .\Get-JavaMetaData.ps1 -BuildFilePath "C:\POC\JavaBuildMetaData\pom.xml"
+-------------------------------------------------------------------------
+Gradle Groovy
+ .\Get-JavaMetaData.ps1 -BuildFilePath "C:\POC\JavaBuildMetaData\build.gradle"
+-------------------------------------------------------------------------
+Gradle Kotlin DSL
+ .\Get-JavaMetaData.ps1 -BuildFilePath "C:\POC\JavaBuildMetaData\build.gradle.kts"
+--------------------------------------------------------------------------
+JEE (Web.XML)
+ .\Get-JavaMetaData.ps1 -BuildFilePath "C:\POC\JavaBuildMetaData\web.xml"
+ .\Get-JavaMetaData.ps1 -BuildFilePath "C:\POC\JavaBuildMetaData\application.xml"
+-------------------------------------------------------------------------
+Optionally specify output file names
+ .\Get-JavaMetaData.ps1 -BuildFilePath "C:\POC\JavaBuildMetaData\pom.xml" -JsonOut "my-output.json" -CsvOut "my-output.csv"
