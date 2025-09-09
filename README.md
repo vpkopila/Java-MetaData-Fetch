@@ -13,7 +13,7 @@ This document outlines methods for extracting metadata from Java-based applicati
 
 ---
 
-## 1. Approach 1: (PowerShell Script Usage)
+## Approach 1: (PowerShell Script Usage)
 
 A PowerShell-based utility to extract metadata from Java project build files (Gradle, Maven, JEE), such as:
 
@@ -74,7 +74,7 @@ Please find result : [*Table format of result captured by PowerShell script*](ht
 
 ---
 
-## 2. Approach 2: (Maven - Surefire Plugin)
+## Approach 2: (Maven - Surefire Plugin)
 
 The **Maven Surefire Plugin** runs unit tests during the Maven lifecycle (`test` phase) and is included by default in Spring Boot through `spring-boot-starter-test`, metadata is Extracted from `<properties>` from test result file.
 
@@ -98,7 +98,7 @@ Please find result : [*XML format of result captured for Maven app(generated)*](
 
 ---
 
-## 3. Approach 3: (Gradle)
+## Approach 3: (Gradle)
 
 Gradle does not have a direct equivalent to the Maven Surefire plugin but can still capture system properties via custom test configurations.
 
