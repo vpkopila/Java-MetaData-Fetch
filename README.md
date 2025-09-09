@@ -4,16 +4,16 @@ This document outlines methods for extracting metadata from Java-based applicati
 
 ### Overview of Metadata Extraction Approaches
 
-| S.No | Method                     | Description |
+| S.No | Approach/Method                     | Description |
 |---|----------------------------|-------------|
-| 1 | **PowerShell Script**      | A unified script to extract both project metadata from Maven, Gradle, and JEE applications. |
-| 2 | **Maven (Surefire Plugin)**| Extracts project metadata from `pom.xml` and captures runtime environment details (e.g., Java version, OS, user info) during test execution. |
-| 3 | **Gradle (Groovy Snippet)**| Custom script in `build.gradle/gradle.kts` to collect build metadata and runtime environment properties (e.g., system properties, locale, Java version). |
+| 1 | **Approach 1 :** **PowerShell Script**      | A unified script to extract both project metadata from Maven, Gradle, and JEE applications. |
+| 2 | **Approach 2 :** **Maven (Surefire Plugin)**| Extracts project metadata from `pom.xml` and captures runtime environment details (e.g., Java version, OS, user info) during test execution. |
+| 3 | **Approach 3 :** **Gradle (Groovy Snippet)**| Custom script in `build.gradle/gradle.kts` to collect build metadata and runtime environment properties (e.g., system properties, locale, Java version). |
 
 
 ---
 
-## 1. PowerShell Script Usage
+## 1. Approach 1: (PowerShell Script Usage)
 
 A PowerShell-based utility to extract metadata from Java project build files (Gradle, Maven, JEE), such as:
 
@@ -74,7 +74,7 @@ Please find result : [*Table format of result captured by PowerShell script*](ht
 
 ---
 
-## 2. Maven - Surefire Plugin
+## 2. Approach 2: (Maven - Surefire Plugin)
 
 The **Maven Surefire Plugin** runs unit tests during the Maven lifecycle (`test` phase) and is included by default in Spring Boot through `spring-boot-starter-test`, metadata is Extracted from `<properties>` from test result file.
 
@@ -98,7 +98,7 @@ Please find result : [*XML format of result captured for Maven app(generated)*](
 
 ---
 
-## 3. Gradle
+## 3. Approach 3: (Gradle)
 
 Gradle does not have a direct equivalent to the Maven Surefire plugin but can still capture system properties via custom test configurations.
 
