@@ -70,7 +70,11 @@ Please find the PowerShell script : [*Get-JavaMetaData.ps1*](/Script/Get-JavaMet
 
 ### 1.2. PowerShell Script - Result Table
 
+This tool can provide the result on console and meanwhile it export the result into Json & CSV formats aswell.
+
 Please find result : [*Table format of result captured by PowerShell script*](https://github.com/vpkopila/Java-MetaData-Fetch/blob/main/SampleResults/ResultTables.md#powershell-script-result)
+
+
 
 ---
 
